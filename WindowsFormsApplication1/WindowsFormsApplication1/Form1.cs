@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void buttonf_Click(object sender, EventArgs e)
+        {
+            label1f.Text = "Hellow";
+        }
     }
 }
