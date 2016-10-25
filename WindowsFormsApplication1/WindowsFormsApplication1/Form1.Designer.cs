@@ -35,8 +35,10 @@
             this.buttonf = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2ff = new System.Windows.Forms.Button();
+            this.buttonff = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -93,6 +95,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.buttonff);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -111,6 +114,16 @@
             this.button2ff.UseVisualStyleBackColor = true;
             this.button2ff.Click += new System.EventHandler(this.button2ff_Click);
             // 
+            // buttonff
+            // 
+            this.buttonff.Location = new System.Drawing.Point(169, 95);
+            this.buttonff.Name = "buttonff";
+            this.buttonff.Size = new System.Drawing.Size(227, 77);
+            this.buttonff.TabIndex = 0;
+            this.buttonff.Text = "Нажми меня";
+            this.buttonff.UseVisualStyleBackColor = true;
+            this.buttonff.Click += new System.EventHandler(this.buttonff_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +135,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,6 +149,7 @@
         private System.Windows.Forms.Button buttonf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2ff;
+        private System.Windows.Forms.Button buttonff;
     }
 }
 

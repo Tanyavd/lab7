@@ -57,5 +57,19 @@ namespace WindowsFormsApplication1
             button1.Text = (++click).ToString();
             button1.BackColor = Color.FromArgb(random.Next(255), random.Next(255), random.Next(255)); 
         }
+
+        private void buttonff_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            switch (rand.Next(0, 5))
+            {
+                case 0: buttonff.BackColor = Color.Lavender; break;
+                case 1: buttonff.BackColor = Color.Cyan; break;
+                case 2: buttonff.BackColor = Color.Magenta; break;
+                case 3: buttonff.BackColor = Color.Yellow; break;
+                case 4: buttonff.BackColor = Color.Red; break;
+
+            }
+        }
     }
 }
