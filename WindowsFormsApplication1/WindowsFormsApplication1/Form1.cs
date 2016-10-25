@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        static int click = 0;
         public Form1()
         {
             InitializeComponent();
@@ -48,6 +49,13 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             OvalForm(button1);
+        }
+
+        private void button2ff_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            button1.Text = (++click).ToString();
+            button1.BackColor = Color.FromArgb(random.Next(255), random.Next(255), random.Next(255)); 
         }
     }
 }

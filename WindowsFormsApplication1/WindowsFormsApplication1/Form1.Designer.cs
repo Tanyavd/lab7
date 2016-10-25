@@ -30,10 +30,11 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1f = new System.Windows.Forms.Label();
             this.buttonf = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2ff = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button2ff);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label1f);
             this.tabPage1.Controls.Add(this.buttonf);
@@ -60,6 +62,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(315, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 40);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Жми";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1f
             // 
@@ -89,15 +101,15 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button2ff
             // 
-            this.button1.Location = new System.Drawing.Point(315, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Жми";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2ff.Location = new System.Drawing.Point(350, 160);
+            this.button2ff.Name = "button2ff";
+            this.button2ff.Size = new System.Drawing.Size(126, 46);
+            this.button2ff.TabIndex = 3;
+            this.button2ff.Text = "Жми";
+            this.button2ff.UseVisualStyleBackColor = true;
+            this.button2ff.Click += new System.EventHandler(this.button2ff_Click);
             // 
             // Form1
             // 
@@ -122,6 +134,7 @@
         private System.Windows.Forms.Label label1f;
         private System.Windows.Forms.Button buttonf;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2ff;
     }
 }
 
