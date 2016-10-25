@@ -30,9 +30,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.buttonf = new System.Windows.Forms.Button();
             this.label1f = new System.Windows.Forms.Label();
+            this.buttonf = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +50,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label1f);
             this.tabPage1.Controls.Add(this.buttonf);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -59,15 +61,13 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // label1f
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.label1f.AutoSize = true;
+            this.label1f.Location = new System.Drawing.Point(80, 109);
+            this.label1f.Name = "label1f";
+            this.label1f.Size = new System.Drawing.Size(0, 13);
+            this.label1f.TabIndex = 1;
             // 
             // buttonf
             // 
@@ -79,13 +79,25 @@
             this.buttonf.UseVisualStyleBackColor = true;
             this.buttonf.Click += new System.EventHandler(this.buttonf_Click);
             // 
-            // label1f
+            // tabPage2
             // 
-            this.label1f.AutoSize = true;
-            this.label1f.Location = new System.Drawing.Point(80, 109);
-            this.label1f.Name = "label1f";
-            this.label1f.Size = new System.Drawing.Size(0, 13);
-            this.label1f.TabIndex = 1;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(551, 253);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(315, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 40);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Жми";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -109,6 +121,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1f;
         private System.Windows.Forms.Button buttonf;
+        private System.Windows.Forms.Button button1;
     }
 }
 
